@@ -1,0 +1,223 @@
+:root {
+--main-font:'Roboto', sans-serif;
+--secondary-font:'Raleway', sans-serif;
+--title-dark-theme-color: #ffffff;
+--title-light-theme-color: #212121;
+--text-description-color: #757575;
+--accent-color: #2196F3;
+}
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    color: #757575;
+}
+
+.link{
+    text-decoration: none;
+    display: block;
+}
+.list{
+    list-style: none;
+}
+.conteiner{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+/* Логотип */
+.logo-header {
+    margin-right: 85px;
+}
+.logo-header,
+.logo-footer,
+.logo-element{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-element {
+    color: var(--accent-color);
+}
+.logo-header{
+    color: #000000
+}
+/* Header */
+
+.header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation-list {
+    display: flex;
+}
+.navigation-list-item:not(:last-child){
+    margin-right: 50px;
+}
+.header-mail-link {
+    margin-right: 30px;
+}
+.header-contacts{
+    display: flex;  
+}
+.navigation-list-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.navigation-list-link,
+.header-mail-link link,
+.header-tel-link link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-light-theme-color);
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus
+{
+    color: var(--accent-color);
+}
+
+.header-mail-link,
+.header-tel-link{
+    color: var(--text-description-color);
+}
+/* Hero section */
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--title-dark-theme-color);
+}
+.modal-btn{
+    font-family: var(--main-font)
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--title-dark-theme-color);
+    border-style: none;
+}
+/* Преимущества секция */
+.subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-light-theme-color);
+}
+.discription{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-description-color)
+}
+/* Услуги секция */
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--title-light-theme-color)
+}
+.services-subtitle{
+    color: var(--title-dark-theme-color);
+}
+/* Команда секция */
+.crewman-list-item-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-light-theme-color);
+    }
+.crewman-list-item-position{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-description-color);
+}
+.logo-footer{
+    color: var(--title-dark-theme-color);
+}
+.address-office{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--title-dark-theme-color);
+}
+
+.footer-mail-link,
+.footer-tel-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+    .subscribe-subtitle{
+        color: var(--title-dark-theme-color);
+    }
+    /* Страница " Портфолио" */
+    /* Радио кнопки */
+    .radio-btn{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+        border-style: none;
+    }
+    .radio-btn:hover,
+    .radio-btn:focus{
+        background-color: var(--accent-color);
+        color: var(--title-dark-theme-color);
+    }
+    .portfolio-list-item-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--title-light-theme-color);
+    }
+    .portfolio-list-item-description{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+        color: var(--text-description-color);
+    }
