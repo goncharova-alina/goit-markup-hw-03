@@ -24,6 +24,16 @@ body {
     color: #757575;
 }
 
+.h1 {
+    margin: 0;
+}
+.h2 {
+    display: block;
+}
+.img {
+    display: block;
+  }
+
 .link{
     text-decoration: none;
     display: block;
@@ -31,12 +41,25 @@ body {
 .list{
     list-style: none;
 }
-.conteiner{
+.conteiner {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--title-light-theme-color)
 }
 /* Логотип */
 .logo-header {
@@ -62,7 +85,7 @@ body {
 
 .header .conteiner{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 .navigation {
@@ -72,14 +95,15 @@ body {
 .navigation-list {
     display: flex;
 }
-.navigation-list-item:not(:last-child){
+.navigation-list-item:not(:last-child) {
     margin-right: 50px;
 }
 .header-mail-link {
     margin-right: 30px;
 }
 .header-contacts{
-    display: flex;  
+    display: flex;
+    margin-left: auto;  
 }
 .navigation-list-link{
     padding-top: 32px;
@@ -109,6 +133,15 @@ body {
     color: var(--text-description-color);
 }
 /* Hero section */
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+}
+.hero-title {
+    margin-bottom: 30px;
+}
 .hero-title{
 font-weight: 900;
 font-size: 44px;
@@ -128,6 +161,18 @@ color: var(--title-dark-theme-color);
     border-style: none;
 }
 /* Преимущества секция */
+.advantages .conteiner {
+    display: flex;
+}
+.advantages-list{
+    display: flex;
+}
+.advantages-list-item:not(:last-child){
+    margin-right: 30px;
+}
+.advantages-subtitle {
+    margin-bottom: 10px;
+}
 .subtitle{
     font-weight: 400;
     font-size: 14px;
@@ -144,17 +189,27 @@ color: var(--title-dark-theme-color);
     color: var(--text-description-color)
 }
 /* Услуги секция */
-.title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--title-light-theme-color)
+.services-subtitle {
+    text-align: center;
+    background-color: #757575;
 }
+.services-list {
+    display: flex;
+}
+.services-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .services-subtitle{
     color: var(--title-dark-theme-color);
 }
 /* Команда секция */
+.team-list {
+    display: flex;
+}
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
 .crewman-list-item-name{
     font-weight: 500;
     font-size: 16px;
