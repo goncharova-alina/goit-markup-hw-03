@@ -242,7 +242,7 @@ color: var(--title-dark-theme-color);
 .social-list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
 }
 /* Наши клиенты */
 .our-client-list {
@@ -370,5 +370,5 @@ color: var(--title-dark-theme-color);
         letter-spacing: 0.03em;
         color: var(--text-description-color);
         margin-left: 24px;
-        margin-bottom: 20px;
+        padding-bottom: 24px;
     }
