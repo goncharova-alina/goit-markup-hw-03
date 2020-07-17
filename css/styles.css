@@ -263,8 +263,8 @@ color: var(--title-dark-theme-color);
 }
 .footer .conteiner {
     display: flex;
-    align-items: center;
-   
+    align-items: baseline;
+
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -303,7 +303,6 @@ color: var(--title-dark-theme-color);
     }
     .subscribe-list {
         display: flex;
-        justify-content: ;
     }
     /* Страница " Портфолио" */
     /* Радио кнопки */
@@ -352,16 +351,17 @@ color: var(--title-dark-theme-color);
         background-color: var(--accent-color);
         color: var(--title-dark-theme-color);
     }
-    .portfolio-list-item-img {
+    /* .portfolio-list-item-img {
         margin-bottom: 20px;
-    }
+    } */
     .portfolio-list-item-title{
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
+        margin-bottom: 4px;
         letter-spacing: 0.06em;
         color: var(--title-light-theme-color);
-        margin-left: 24px;
+        
     }
     .portfolio-list-item-description{
         font-weight: normal;
@@ -369,6 +369,10 @@ color: var(--title-dark-theme-color);
         line-height: 1.9;
         letter-spacing: 0.03em;
         color: var(--text-description-color);
-        margin-left: 24px;
-        padding-bottom: 24px;
+    }
+    .portfolio-card {
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        padding-left: 24px;
     }
